@@ -2,11 +2,11 @@
   "name": "express-collegeregistrationsystem",
   "version": "0.0.0",
   "private": true,
-    "scripts": {
+  "scripts": {
     "doc": "jsdoc -c jsdoc.json",
     "start": "node ./bin/www",
     "devstart": "nodemon ./bin/www",
-    "serverstart": "DEBUG=express-collegeregistrationsystem:* npm run devstart",
+    "serverstart": "DEBUG=express-collegeregistrationsystem:* npm run devstart"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
