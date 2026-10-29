@@ -1,7 +1,34 @@
 doctype html
-html
+html(lang='en')
   head
     title= title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css", integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr", crossorigin="anonymous")
+    script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js", integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q", crossorigin="anonymous")
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+    div(class='container-fluid')
+      div(class='row')
+        div(class='col-sm-2')
+          block sidebar
+            ul(class='sidebar-nav')
+              li
+                a(href='/registry') Home
+              li
+                a(href='/registry/courses') All courses
+              li
+                a(href='/registry/facultymembers') All faculty members
+              li
+                a(href='/registry/coursesections') All course sections
+              hr
+              li
+                a(href='/registry/course/create') Create new course
+              li
+                a(href='/registry/facultymember/create') Create new faculty member
+              li
+                a(href='/registry/coursesection/create') Create new course section
+
+        div(class='col-sm-10')
+          block content
+

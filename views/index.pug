@@ -2,4 +2,13 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Welcome to the #[em CollegeRegistrationSystem] for Greenville Community College. This system allows you to manage courses, course sections, and faculty members.
+
+  h2 Dynamic content
+
+  p The college registration system has the following record counts:
+
+  ul
+    li #[strong Courses:] !{course_count}
+    li #[strong Course Sections:] !{coursesection_count}
+    li #[strong Faculty Members:] !{facultymember_count}
