@@ -6,18 +6,23 @@
     "doc": "jsdoc -c jsdoc.json",
     "start": "node ./bin/www",
     "devstart": "nodemon ./bin/www",
-    "serverstart": "DEBUG=express-collegeregistrationsystem:* npm run devstart"
+    "serverstart": "DEBUG=express-collegeregistrationsystem:* npm run devstart",
+    "test": "node --test",
+    "coverage": "c8 --reporter=html npm test"
   },
   "dependencies": {
+    "c8": "^12.0.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "express-validator": "^7.3.2",
     "http-errors": "~1.6.3",
     "jsdoc": "^4.0.5",
+    "mongodb-memory-server": "^11.3.0",
     "mongoose": "^9.11.4",
     "morgan": "~1.9.1",
-    "pug": "2.0.0-beta11"
+    "pug": "2.0.0-beta11",
+    "supertest": "^7.3.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
