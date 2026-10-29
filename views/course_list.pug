@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  if course_list.length
+    ul
+      each course in course_list
+        li
+          a(href=course.url) !{course.id} !{course.title}
+
+  else
+    p There are no courses.

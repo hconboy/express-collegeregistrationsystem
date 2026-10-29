@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1 Title: !{course.id} !{course.title}
+    p #[strong Credits: ] !{course.number_of_credits}
+
+  div(style='margin-left:20px;margin-top:20px')
+    h2(style='font-size: 1.5rem;') Sections
+
+    each val in course_sections
+      hr
+      p #[strong Id: ]
+        a(href=val.url) #{val._id}
+
+    else
+      p There are no sections of this course.

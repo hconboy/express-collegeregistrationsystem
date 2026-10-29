@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  if coursesection_list.length
+    ul
+      each coursesection in coursesection_list
+        li
+          a(href=coursesection.url) !{coursesection.title}
+          |  (!{coursesection.faculty.name})
+
+
+  else
+    p There are no course sections.

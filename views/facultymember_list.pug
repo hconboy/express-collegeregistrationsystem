@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  if facultymember_list.length
+    ul
+      each member in facultymember_list
+        li
+          a(href=member.url) #{member.id} #{member.name}
+
+  else
+    p There are no faculty members.
