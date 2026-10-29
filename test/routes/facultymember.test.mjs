@@ -33,7 +33,7 @@ test("Faculty Member Routes", async (t) => {
   // Faculty List Routes Suite
   await t.test("Faculty List Routes", async (t) => {
     await t.test("GET /registry/facultymembers", async () => {
-      assert.ok(false, true, "Test is not implemented yet."
+      assert.ok(false, "Test is not implemented yet."
       );
     });
   });
@@ -43,12 +43,12 @@ test("Faculty Member Routes", async (t) => {
     await t.test(
       "should return faculty detail page for existing faculty member",
       async () => {
-        assert.ok(false, true, "Test is not implemented yet."); 
+        assert.ok(false, "Test is not implemented yet."); 
       }
     );
 
     await t.test("should return 404 for non-existent faculty member", async () => {
-      assert.ok(false, true, "Test is not implemented yet.");
+      assert.ok(false, "Test is not implemented yet.");
     });
   });
 });
